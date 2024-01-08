@@ -22,21 +22,13 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "variable group parameters"
+      Write-Host "$(variable1)"
+      Write-Host "$(secret1)"
       
       Write-Host "${vargroup1:variable1}"
       
       Write-Host "${vargroup1:secret1}"
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your PowerShell commands here. ${env:VARIABLE-NAME}
-      
-      Write-Host "Hello World"
-      
-      Write-Host "${env:var1}"
-      
-      Write-Host "${env:secretvar}"
+
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
