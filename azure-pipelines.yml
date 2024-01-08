@@ -23,9 +23,9 @@ steps:
       
       Write-Host "variable group parameters"
       
-      Write-Host "${env:variable1}"
+      Write-Host "${vargroup1:variable1}"
       
-      Write-Host "${env:secret1}"
+      Write-Host "${vargroup1:secret1}"
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
