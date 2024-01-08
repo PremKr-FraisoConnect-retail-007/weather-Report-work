@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 schedules:
-- cron: '5 4 * * 7'
+- cron: '5 4 * * *'
   displayName: Daily midnight build
   branches:
     include:
