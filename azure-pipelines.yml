@@ -10,7 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-- group: vargroup1
+- group: kvgroup
 
 steps:
 - task: PowerShell@2
@@ -20,12 +20,10 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "variable group parameters"
-      Write-Host "$(variable1)"
-      Write-Host "$(secret1)"
       
-      Write-Host "${env:variable1}"
+      Write-Host "$(secret)"
       
-      Write-Host "${env:secret1}"
+      Write-Host "${env:secret}"
 
 # - task: NuGetToolInstaller@1
 
