@@ -24,8 +24,8 @@ steps:
       Write-Host "$(secret)"
       
       Write-Host "${env:secret}"
-
-# - task: NuGetToolInstaller@1
+- task: NuGetToolInstaller@1
+  continueOnError: true
 
 # - task: NuGetCommand@2
 #   inputs:
