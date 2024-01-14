@@ -24,13 +24,13 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- task: SonarCloudPrepare@1
-  inputs:
-    SonarCloud: 'weatherapp-toodosonartoken'
-    organization: 'vvhit-devops'
-    scannerMode: 'MSBuild'
-    projectKey: 'VVHIT-DevOps_weather-todo-app'
-    projectName: 'weather-todo-app'
+# - task: SonarCloudPrepare@1
+#   inputs:
+#     SonarCloud: 'weatherapp-toodosonartoken'
+#     organization: 'vvhit-devops'
+#     scannerMode: 'MSBuild'
+#     projectKey: 'VVHIT-DevOps_weather-todo-app'
+#     projectName: 'weather-todo-app'
 
 - task: VSBuild@1
   inputs:
@@ -58,7 +58,7 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: WhiteSource@21
-  inputs:
-    cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'weather-todo-app'
+# - task: WhiteSource@21
+#   inputs:
+#     cwd: '$(System.DefaultWorkingDirectory)'
+#     projectName: 'weather-todo-app'
