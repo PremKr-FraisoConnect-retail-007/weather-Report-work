@@ -7,7 +7,7 @@ trigger:
 - main
 
 variables:
-  solution: '**/*.sln'
+  solution: 'src/ContainerApp.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
