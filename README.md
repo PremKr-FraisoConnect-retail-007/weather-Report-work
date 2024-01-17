@@ -2,6 +2,8 @@
 
 This .NET 6 example application to demonstrate the process of creating a container application. You can choose to publish the application to Azure Kubernetes Services (AKS) or Azure RedHat OpenShift (ARO).
 
+https://vsrm.dev.azure.com/AshokDevOps5/_apis/public/Release/badge/12d1f5d5-e06f-4eb3-bc26-14d4e294782c/16/39
+
 ![Application](/docs/images/img01.png "Application")
 
 This is the application architecture diagram
