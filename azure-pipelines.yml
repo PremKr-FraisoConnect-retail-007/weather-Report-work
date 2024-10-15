@@ -26,10 +26,13 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Variable Group Parameters"
+
+       Write-Host "$(variable1)"
+       Write-Host "$(secret1)"
+
+      Write-Host "${VarGroup_01:variable1}"
       
-      Write-Host "${env:variable1}"
-      
-      Write-Host "${env:secret}"
+      Write-Host "${VarGroup_01:secret1}"
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
