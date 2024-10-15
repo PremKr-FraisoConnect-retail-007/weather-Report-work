@@ -9,12 +9,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-
 jobs:
-- jobs:A
+- job: A
   steps:
-   - bash: echo "A"
+  - bash: echo "A"
 
--jobs: B
- steps:
-   - bash: echo "B"
+- job: B
+  steps:
+  - bash: echo "B"
