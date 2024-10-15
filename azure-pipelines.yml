@@ -25,6 +25,17 @@ steps:
     script: |
       # Write your PowerShell commands here.
       
+      Write-Host "Variable Group Parameters"
+      
+      Write-Host "${env:variable1}"
+      
+      Write-Host "${env:secret}"
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
       Write-Host "Hello World"
       
       Write-Host "${env:VAR1}"
