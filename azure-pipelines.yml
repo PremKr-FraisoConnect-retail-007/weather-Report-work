@@ -17,7 +17,19 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
+
 steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
+      
+      Write-Host "${env:VAR1}"
+      
+      Write-Host "${env:SECRETVAR}"
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
